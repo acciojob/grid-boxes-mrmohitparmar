@@ -1,1 +1,36 @@
-/*  your css code here. If applicable */
+#grid {
+  height: 360px;
+  width: 600px;
+  background-color: green;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: repeat(5, 60px);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#grid div {
+  color: white;
+  border: 2px solid white;
+  
+  font-weight: bold;
+}
+
+.one {
+  grid-column: 1 / 5;
+}
+
+.two {
+  grid-row: 2 / 6;
+}
+
+.four {
+  grid-column: 3 / 5;
+}
+
+.five {
+  grid-column: 2 / 4;
+}
+
+.ten {
+  grid-column: 2 / 5;
+}
